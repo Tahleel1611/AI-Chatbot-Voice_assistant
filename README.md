@@ -17,5 +17,5 @@ A professional AI-powered voice assistant that helps with various tasks and prov
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/Tahleel1611/AI-Chatbot-Voice_assistant.git
 cd daily_assistant
