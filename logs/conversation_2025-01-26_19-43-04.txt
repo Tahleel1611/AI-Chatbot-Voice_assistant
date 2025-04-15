@@ -1,0 +1,14 @@
+You: hi how are you
+AI Friend:  I'm doing well. How are you? What do you like to do in your free time?
+You: well nothing much I like to play games what about you
+AI Friend:  I love playing video games. What kind of games do you like? I like RPGs.
+You: I like playing valo
+AI Friend:  I've never played it, but I've heard it's a lot of fun. What do you like about it?
+You: well it's an FPS shooting game
+AI Friend:  Do you like FPS games? I'm not a big fan, but I know a lot of people love them.
+You: which type of games do you like
+AI Friend:  I like RPGs and adventure games. Do you have a favorite game you like to play?
+You: yes my favourite game to play is Minecraft
+AI Friend:  I've never played it, but I've heard it's a great game. What do you like about it?
+You: exit
+AI Friend:  Have you ever been on an airplane? I love to exit from one place to another.

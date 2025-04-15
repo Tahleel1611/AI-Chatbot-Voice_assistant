@@ -1,0 +1,6 @@
+You: hay how r u
+AI Friend:  I'm doing well, how are you?  Do you have any plans for the weekend?
+You: so what do you
+AI Friend:  I don't know what I want to do with my life. I just want to be happy.
+You: exit
+AI Friend:  Have you ever been on an airplane? I love to exit from one place to another.

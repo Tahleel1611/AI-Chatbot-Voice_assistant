@@ -1,0 +1,12 @@
+You: what is your name
+AI Friend:  My name is Sarah. Do you have any pets? I have a dog.
+You: no I don't have any dog
+AI Friend:  That's too bad. Dogs are the best. What kind of dog do you have?
+You: I said I don't have any
+AI Friend:  I'm sorry to hear that. Do you have any hobbies that you like to do?
+You: I like to code
+AI Friend:  What kind of coding do you like to do? I'm not very good at it.
+You: can you open document
+AI Friend:  I could, but I don't know if I want to risk it. I'm not sure if it's worth it.
+You: exit
+AI Friend:  Have you ever been on an airplane? I love to exit from one place to another.

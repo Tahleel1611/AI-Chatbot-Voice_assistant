@@ -1,0 +1,63 @@
+2025-04-15 20:29:50 | INFO     | __main__:<module>:65 - Starting Daily Assistant...
+2025-04-15 20:29:50 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:29:50 | INFO     | __main__:daily_assistant:17 - Starting assistant with configuration:
+2025-04-15 20:29:50 | INFO     | __main__:daily_assistant:18 - Language: en-in
+2025-04-15 20:29:50 | INFO     | __main__:daily_assistant:19 - Pause threshold: 1.0
+2025-04-15 20:29:50 | INFO     | speech:say:21 - Speaking: Hello, I am your AI assistant. How can I assist you today?
+2025-04-15 20:29:54 | INFO     | __main__:daily_assistant:26 - Listening for command...
+2025-04-15 20:29:54 | INFO     | speech:take_command:37 - Starting to listen for command
+2025-04-15 20:29:56 | INFO     | speech:take_command:41 - Listening...
+2025-04-15 20:29:56 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:30:12 | INFO     | speech:take_command:46 - Recognizing speech...
+2025-04-15 20:30:12 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:30:13 | WARNING  | speech:take_command:52 - Could not understand audio
+2025-04-15 20:30:13 | INFO     | speech:say:21 - Speaking: Sorry, I encountered an error with the speech recognition system.
+2025-04-15 20:30:17 | INFO     | __main__:daily_assistant:30 - No command detected
+2025-04-15 20:30:17 | INFO     | __main__:daily_assistant:26 - Listening for command...
+2025-04-15 20:30:17 | INFO     | speech:take_command:37 - Starting to listen for command
+2025-04-15 20:30:17 | INFO     | speech:take_command:41 - Listening...
+2025-04-15 20:30:17 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:30:22 | INFO     | speech:take_command:46 - Recognizing speech...
+2025-04-15 20:30:22 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:30:23 | WARNING  | speech:take_command:52 - Could not understand audio
+2025-04-15 20:30:23 | INFO     | speech:say:21 - Speaking: Sorry, I encountered an error with the speech recognition system.
+2025-04-15 20:30:27 | INFO     | __main__:daily_assistant:30 - No command detected
+2025-04-15 20:30:27 | INFO     | __main__:daily_assistant:26 - Listening for command...
+2025-04-15 20:30:27 | INFO     | speech:take_command:37 - Starting to listen for command
+2025-04-15 20:30:27 | INFO     | speech:take_command:41 - Listening...
+2025-04-15 20:30:27 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:30:34 | INFO     | speech:take_command:46 - Recognizing speech...
+2025-04-15 20:30:34 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:30:34 | INFO     | speech:take_command:48 - Recognized: welcome
+2025-04-15 20:30:34 | INFO     | __main__:daily_assistant:33 - Received command: welcome
+2025-04-15 20:30:37 | INFO     | speech:say:21 - Speaking:  Hi, how are you doing today? I'm doing well, thank you for asking. 
+2025-04-15 20:30:42 | ERROR    | __main__:daily_assistant:55 - Error in main loop: 'exit_commands'
+2025-04-15 20:30:42 | INFO     | speech:say:21 - Speaking: I'm not sure how to help with that. Could you please rephrase your request?
+2025-04-15 20:30:47 | INFO     | __main__:daily_assistant:26 - Listening for command...
+2025-04-15 20:30:47 | INFO     | speech:take_command:37 - Starting to listen for command
+2025-04-15 20:30:47 | INFO     | speech:take_command:41 - Listening...
+2025-04-15 20:30:47 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:30:59 | INFO     | speech:take_command:46 - Recognizing speech...
+2025-04-15 20:30:59 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:31:00 | INFO     | speech:take_command:48 - Recognized: what r u doing
+2025-04-15 20:31:00 | INFO     | __main__:daily_assistant:33 - Received command: what r u doing
+2025-04-15 20:31:02 | INFO     | speech:say:21 - Speaking:  I'm going on a cruise to the Bahamas. I can't wait!
+2025-04-15 20:31:06 | ERROR    | __main__:daily_assistant:55 - Error in main loop: 'exit_commands'
+2025-04-15 20:31:06 | INFO     | speech:say:21 - Speaking: I'm not sure how to help with that. Could you please rephrase your request?
+2025-04-15 20:31:10 | INFO     | __main__:daily_assistant:26 - Listening for command...
+2025-04-15 20:31:10 | INFO     | speech:take_command:37 - Starting to listen for command
+2025-04-15 20:31:11 | INFO     | speech:take_command:41 - Listening...
+2025-04-15 20:31:11 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:31:29 | INFO     | speech:take_command:46 - Recognizing speech...
+2025-04-15 20:31:29 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:31:30 | INFO     | speech:take_command:48 - Recognized: exit
+2025-04-15 20:31:30 | INFO     | __main__:daily_assistant:33 - Received command: exit
+2025-04-15 20:31:33 | INFO     | speech:say:21 - Speaking:  Have you ever been on an airplane? I love to exit from one place to another.
+2025-04-15 20:31:37 | ERROR    | __main__:daily_assistant:55 - Error in main loop: 'exit_commands'
+2025-04-15 20:31:37 | INFO     | speech:say:21 - Speaking: I'm not sure how to help with that. Could you please rephrase your request?
+2025-04-15 20:31:42 | INFO     | __main__:daily_assistant:26 - Listening for command...
+2025-04-15 20:31:42 | INFO     | speech:take_command:37 - Starting to listen for command
+2025-04-15 20:31:42 | INFO     | speech:take_command:41 - Listening...
+2025-04-15 20:31:42 | INFO     | utils.config:load_config:27 - Successfully loaded configuration
+2025-04-15 20:31:48 | INFO     | __main__:daily_assistant:51 - Assistant interrupted by user
+2025-04-15 20:31:48 | INFO     | speech:say:21 - Speaking: Assistant interrupted. Goodbye!
