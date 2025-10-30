@@ -1,10 +1,29 @@
+# Text-to-Speech engine for voice output
 pyttsx3==2.90
+
+# Speech recognition for voice input
 SpeechRecognition==3.10.0
-python-dotenv==1.0.0
-loguru==0.7.2
-toml==0.10.2
-transformers==4.39.3
-torch==2.2.2
-flask==2.3.3
+
+# Audio processing for microphone input
 pyaudio==0.2.14
+
+# Environment variable management
+python-dotenv==1.0.0
+
+# Advanced logging functionality
+loguru==0.7.2
+
+# TOML configuration file parser
+toml==0.10.2
+
+# Hugging Face transformers for AI model (BlenderBot)
+transformers==4.39.3
+
+# PyTorch backend for transformers
+torch==2.2.2
+
+# Web framework for REST API
+flask==2.3.3
+
+# Cross-Origin Resource Sharing support for Flask
 flask-cors==4.0.0
