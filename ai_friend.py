@@ -68,9 +68,9 @@ def ask_ai_friend(prompt: str, max_retries: int = 3, retry_delay: float = 1.0) -
 
 def clear_conversation_history() -> None:
     """Clear the conversation history."""
-    global conversation_history
     conversation_history.clear()
 
 def get_conversation_history() -> list:
     """Get the current conversation history."""
     return conversation_history.copy()
+
