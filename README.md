@@ -3,6 +3,10 @@
 <div align="center">
 
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)
+![Last Commit](https://img.shields.io/github/last-commit/Tahleel1611/AI-Chatbot-Voice_assistant)
+![Stars](https://img.shields.io/github/stars/Tahleel1611/AI-Chatbot-Voice_assistant?style=social)
+![Issues](https://img.shields.io/github/issues/Tahleel1611/AI-Chatbot-Voice_assistant)
+![Contributors](https://img.shields.io/github/contributors/Tahleel1611/AI-Chatbot-Voice_assistant)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 ![Maintenance](https://img.shields.io/badge/maintained-yes-brightgreen.svg)
@@ -115,6 +119,27 @@ The **AI Chatbot Voice Assistant** (also known as "Friday AI") is a versatile, i
 
 ---
 
+## 🚀 Quick Start
+
+Want to get started quickly? Here's the fastest way to run the assistant:
+
+```bash
+# Clone the repository
+git clone https://github.com/Tahleel1611/AI-Chatbot-Voice_assistant.git
+
+# Navigate to directory
+cd AI-Chatbot-Voice_assistant
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the voice assistant
+python main.py
+```
+
+> **Note**: For detailed installation instructions including prerequisites and troubleshooting, see the [Installation](#-installation) section below.
+> 
+
 ## 📥 Installation
 
 ### Prerequisites
@@ -142,6 +167,7 @@ Before you begin, ensure you have the following installed:
 ```bash
 git clone https://github.com/Tahleel1611/AI-Chatbot-Voice_assistant.git
 cd AI-Chatbot-Voice_assistant
+
 ```
 
 #### 2. Create Virtual Environment
