@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Animation Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        h1 {
+            color: #00aaff;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+        }
+        
+        .subtitle {
+            color: #6a9fb5;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        /* JARVIS Animation Styles */
+        .jarvis-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .jarvis-circle {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .jarvis-ring {
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid transparent;
+        }
+
+        .ring-1 {
+            width: 100%;
+            height: 100%;
+            border-color: rgba(0, 170, 255, 0.3);
+            animation: rotate-cw 3s linear infinite;
+        }
+
+        .ring-2 {
+            width: 80%;
+            height: 80%;
+            border-color: rgba(0, 170, 255, 0.5);
+            border-top-color: #00aaff;
+            border-bottom-color: #00aaff;
+            animation: rotate-ccw 2s linear infinite;
+        }
+
+        .ring-3 {
+            width: 60%;
+            height: 60%;
+            border-color: rgba(0, 170, 255, 0.7);
+            border-left-color: #00aaff;
+            border-right-color: #00aaff;
+            animation: rotate-cw 1.5s linear infinite;
+        }
+
+        .jarvis-core {
+            width: 40%;
+            height: 40%;
+            background: radial-gradient(circle, #00aaff 0%, #0066cc 50%, #003366 100%);
+            border-radius: 50%;
+            box-shadow: 0 0 20px #00aaff, 0 0 40px rgba(0, 170, 255, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.3);
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        .jarvis-status {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #00aaff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Animations */
+        @keyframes rotate-cw {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotate-ccw {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 0 20px #00aaff, 0 0 40px rgba(0, 170, 255, 0.5);
+            }
+            50% { 
+                transform: scale(1.1);
+                box-shadow: 0 0 30px #00aaff, 0 0 60px rgba(0, 170, 255, 0.7);
+            }
+        }
+
+        /* Active/Thinking State */
+        .jarvis-circle.active .ring-1 { animation-duration: 0.5s; }
+        .jarvis-circle.active .ring-2 { animation-duration: 0.3s; }
+        .jarvis-circle.active .ring-3 { animation-duration: 0.2s; }
+        .jarvis-circle.active .jarvis-core {
+            animation: pulse-active 0.3s ease-in-out infinite;
+        }
+
+        @keyframes pulse-active {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 0 30px #00aaff, 0 0 60px rgba(0, 170, 255, 0.8);
+            }
+            50% { 
+                transform: scale(1.2);
+                box-shadow: 0 0 50px #00aaff, 0 0 80px rgba(0, 170, 255, 1);
+            }
+        }
+        
+        /* Button Styles */
+        .controls {
+            margin-top: 40px;
+            display: flex;
+            gap: 20px;
+        }
+        
+        button {
+            padding: 12px 30px;
+            font-size: 16px;
+            background: linear-gradient(135deg, #00aaff 0%, #0088cc 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 170, 255, 0.3);
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 170, 255, 0.5);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        .info {
+            margin-top: 40px;
+            text-align: center;
+            color: #6a9fb5;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>🤖 JARVIS AI Circle Animation</h1>
+    <p class="subtitle">Iron Man Style Voice Assistant Visual Feedback</p>
+    
+    <!-- JARVIS AI Circle -->
+    <div class="jarvis-container">
+        <div class="jarvis-circle" id="jarvis-circle">
+            <div class="jarvis-ring ring-1"></div>
+            <div class="jarvis-ring ring-2"></div>
+            <div class="jarvis-ring ring-3"></div>
+            <div class="jarvis-core"></div>
+        </div>
+        <div class="jarvis-status" id="jarvis-status">Ready</div>
+    </div>
+    
+    <!-- Control Buttons -->
+    <div class="controls">
+        <button onclick="activateJarvis()">Activate (Processing)</button>
+        <button onclick="deactivateJarvis()">Deactivate (Ready)</button>
+    </div>
+    
+    <div class="info">
+        <p><strong>Idle State:</strong> Gentle pulse with slowly rotating rings</p>
+        <p><strong>Active State:</strong> Fast spinning rings with intense pulsing core</p>
+        <p>This animation will trigger automatically when users interact with your AI chatbot!</p>
+    </div>
+
+    <script>
+        const jarvisCircle = document.getElementById('jarvis-circle');
+        const jarvisStatus = document.getElementById('jarvis-status');
+        
+        function activateJarvis() {
+            jarvisCircle.classList.add('active');
+            jarvisStatus.textContent = 'Processing...';
+        }
+        
+        function deactivateJarvis() {
+            jarvisCircle.classList.remove('active');
+            jarvisStatus.textContent = 'Ready';
+        }
+        
+        // Auto demo - toggle every 3 seconds
+        let autoDemo = setInterval(() => {
+            if (jarvisCircle.classList.contains('active')) {
+                deactivateJarvis();
+            } else {
+                activateJarvis();
+            }
+        }, 3000);
+        
+        // Stop auto demo when user clicks a button
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                clearInterval(autoDemo);
+            });
+        });
+    </script>
+</body>
+</html>
