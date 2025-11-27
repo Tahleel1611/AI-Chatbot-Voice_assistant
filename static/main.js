@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const sendBtn = document.getElementById('send-btn');
     const chatBox = document.getElementById('chat-box');
     const loader = document.getElementById('loader');
+        const jarvisCircle = document.getElementById('jarvis-circle');
+    const jarvisStatus = document.getElementById('jarvis-status');
 
     function appendMessage(sender, message) {
         const msgDiv = document.createElement('div');
@@ -20,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
         appendMessage('You', command);
         input.value = '';
         loader.style.display = 'block';
+                jarvisCircle.classList.add('active');
+        jarvisStatus.textContent = 'Processing...';
 
         try {
             const response = await fetch('/process-command', {
@@ -37,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
             appendMessage('AI', 'Network error. Please try again.');
         } finally {
             loader.style.display = 'none';
+                        jarvisCircle.classList.remove('active');
+            jarvisStatus.textContent = 'Ready';
         }
     });
 
@@ -53,4 +59,5 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('theme-light');
         themeToggle.textContent = document.body.classList.contains('theme-dark') ? 'Light Mode' : 'Dark Mode';
     });
+
 });
