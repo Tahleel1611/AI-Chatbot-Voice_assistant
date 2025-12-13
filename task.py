@@ -3,6 +3,7 @@ import os
 import datetime
 import random
 import platform
+import requests
 from typing import Optional
 from speech import say
 
@@ -168,6 +169,23 @@ class TaskHandler:
         joke = random.choice(self.jokes)
         say(joke)
         return True
+
+        def _handle_weather(self, text: str) -> bool:
+        """Handle weather query."""
+        try:
+            # Extract city name from the text
+            city = text.lower().replace("weather", "").replace("in", "").replace("at", "").strip()
+            
+            if not city:
+                city = "London"  # Default city
+            
+            # Use wttr.in for simple weather info (no API key needed)
+            say(f"Getting weather information for {city}")
+            webbrowser.open(f"https://wttr.in/{city}")
+            return True
+        except Exception:
+            say("Sorry, I couldn't get the weather information")
+            return False
     
     def _handle_system_info(self) -> bool:
         """Handle system information requests."""
@@ -231,3 +249,4 @@ def handle_task(text: str) -> bool:
         bool: True if task was handled, False otherwise
     """
     return _task_handler.handle_task(text)
+
