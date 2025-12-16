@@ -81,10 +81,9 @@ class TaskHandler:
         elif "joke" in text_lower:
             return self._handle_joke()
 
-                # Weather
-                elif "weather" in text_lower:
-                                return self._handle_weather(text)
-        
+                    # Weather
+    elif "weather" in text_lower:
+        return self._handle_weather(text)
         # System information
         elif "system info" in text_lower or "system information" in text_lower:
             return self._handle_system_info()
@@ -253,5 +252,6 @@ def handle_task(text: str) -> bool:
         bool: True if task was handled, False otherwise
     """
     return _task_handler.handle_task(text)
+
 
 
